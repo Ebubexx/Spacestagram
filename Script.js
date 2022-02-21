@@ -13,11 +13,14 @@ $(document).ready(function () {
   });
 });
 
-$.get("https://api.nasa.gov/planetary/apod?api_key=ghDRbGoN2ROByGuggVmgmF0nN4XSuSgJrgdoD9hF&count=2&thumbs=True", function (data) {
+$.get("https://api.nasa.gov/planetary/apod?api_key=ghDRbGoN2ROByGuggVmgmF0nN4XSuSgJrgdoD9hF&start_date=2022-01-01&thumbs=True", function (data) {
   console.log(typeof data); // string
   console.log(data); // HTML content of the jQuery.ajax page
   var firstPost = data[0]
   makePost(firstPost["url"], firstPost["date"], firstPost["title"], firstPost["explanation"]);
+  $.each(["1", "2", "3"], function (url, date, title, explanation) {
+    alert("Index #" + date + ": " + date);
+  });
 });
 
 function makePost(imgurl, date, title, description) {
