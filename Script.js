@@ -13,13 +13,11 @@ $(document).ready(function () {
   });
 });
 
-$.get("https://api.nasa.gov/planetary/apod?api_key=ghDRbGoN2ROByGuggVmgmF0nN4XSuSgJrgdoD9hF&start_date=2022-01-01&thumbs=True", function (data) {
+$.get("https://api.nasa.gov/planetary/apod?api_key=ghDRbGoN2ROByGuggVmgmF0nN4XSuSgJrgdoD9hF&start_date=2022-01-01&end_date=2022-02-19&thumbs=True", function (data) {
   console.log(typeof data); // string
   console.log(data); // HTML content of the jQuery.ajax page
-  var firstPost = data[0]
-  makePost(firstPost["url"], firstPost["date"], firstPost["title"], firstPost["explanation"]);
-  $.each(["1", "2", "3"], function (url, date, title, explanation) {
-    alert("Index #" + date + ": " + date);
+  data.forEach(post => {
+    makePost(post.url, post.date, post.title, post.explanation);
   });
 });
 
@@ -32,4 +30,4 @@ function makePost(imgurl, date, title, description) {
       <button class="likebutton">Like</button>
     </section> `;
   $("main").append(post);
-} 
+};
