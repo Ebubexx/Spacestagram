@@ -1,7 +1,7 @@
 
 
 $(document).ready(function () {
-  $.get("https://api.nasa.gov/planetary/apod?api_key=ghDRbGoN2ROByGuggVmgmF0nN4XSuSgJrgdoD9hF&start_date=2022-01-01&end_date=2022-02-19&thumbs=True", function (data) {
+  $.get("https://api.nasa.gov/planetary/apod?api_key=ghDRbGoN2ROByGuggVmgmF0nN4XSuSgJrgdoD9hF&start_date=2022-01-15&end_date=2022-01-24&thumbs=True", function (data) {
     console.log(typeof data); // string
     console.log(data); // HTML content of the jQuery.ajax page
     data.forEach(post => {

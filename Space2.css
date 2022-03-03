@@ -1,0 +1,53 @@
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #0b525b;
+}
+
+article {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.name {
+  font-family: 'roboto', sans-serif;
+  font-weight: 500;
+  color: #4d194d;
+}
+
+.section1 {
+  flex-shrink: 5;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+aside {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #0b525b;
+}
+
+@media (max-width: 1223px) {
+  .section1 {width: 500px;}
+  .img1 {width: 495px; height: 420px}
+}
+
+@media (max-width: 1023px) {
+  .section1 {width: 400px;}
+  .img1 {width: 395px; height:320px;}
+}
+
+@media (max-width: 823px) {
+  .section1 {width: 550px;}
+  .img1 {width: 545px; height: 500px;}
+}
+
+@media (max-width: 625px) {
+  .section1 {width: 450px;}
+  .img1 {width: 445px; height: 400px;}
+}

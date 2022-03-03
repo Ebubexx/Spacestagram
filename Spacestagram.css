@@ -3,37 +3,32 @@
 }
 
 .section1 {
-  width: 650px;
+  width: 600px;
   border: 2px solid #F6F6F7;
   text-align: center;
   border-radius: 12px;
   background-color: white;
   box-shadow: 2px 2px 10px grey;
-  margin-left: 300px;
+  margin-bottom: 50px;
 }
 
 .img1 {
-  width: 645px;
-  height: 600px;
-  border: 1px solid grey;
+  width: 595px;
+  height: 520px;
   border-radius: 12px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-h1 {
-  font-family: sans-serif;
-  font-weight: 600;
-}
-
 article {
   font-family: sans-serif;
-  color: #97989B;
+  color: #006466;
   font-weight: bold;
 }
 
 .p1 {
-  font-family: sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
   font-size: 1.2rem;
   background-color: white;
   text-align: left;
@@ -48,16 +43,20 @@ article {
 }
 
 .date {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
   font-weight: bold;
-  color: #97989B;
+  color: #654c6c;
   background-color: white;
+  padding-left: 5px;
 }
 
 .likebutton {
   padding: 5px 15px;
   border: 1px solid rgb(170, 170, 170);
   border-radius: 3px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: #714771;
   background-color: white;
   margin-bottom: 10px;
   margin-right: 900px;
@@ -68,51 +67,4 @@ article {
 .likebutton:hover {
   background-color: #d3d3d3;
   font-weight: bold;
-}
-
-.button1:active {
-  background-color: #ff0a54;
-}
-
-.img2 {
-  width: 645px;
-  height: 600px;
-  border: 1px solid grey;
-  border-radius: 12px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  margin-top: 0;
-  margin-left: 0;
-}
-
-.section2 {
-  width: 650px;
-  border: 2px solid #F6F6F7;
-  text-align: center;
-  border-radius: 12px;
-  background-color: white;
-  box-shadow: 2px 2px 10px grey;
-  margin-left: 300px;
-  margin-top: 50px;
-}
-
-.button2 {
-  padding: 5px 15px;
-  border: 1px solid rgb(170, 170, 170);
-  border-radius: 3px;
-  font-family: sans-serif;
-  background-color: white;
-  margin-bottom: 10px;
-  margin-right: 900px;
-  margin-left: 10px;
-  box-shadow: 1.4px 1.4px 2px rgb(170, 170, 170);
-}
-
-.button2:hover {
-  background-color: #d3d3d3;
-  font-weight: bold;
-}
-
-.button2:active {
-  background-color: #ff0a54;
 }
